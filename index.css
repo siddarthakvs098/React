@@ -16,9 +16,11 @@
     list-style-type:none;
 }
 .res-card{
-    margin: 2px;
+    margin: 5px;
     width : 200px;
     padding: 10px;
+    
+    overflow-wrap: break-word;
 }
 .res-card:hover{
     border: 1px solid black;
@@ -30,4 +32,30 @@
 .res-container{
     display: flex;
     flex-wrap: wrap;
+}
+.shimmer-container{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.shimmer-card{
+    height: 350px;
+    width : 200px;
+    background-color: #f0f0f0;
+    border: 1px solid black;
+    margin: 5px;
+}
+.login{
+    padding : 5px 10px;
+    cursor: pointer;
+}
+.filter{
+    
+    display: flex;
+}
+.user-card{
+    border: solid 1px black;
+}
+.userClass-card{
+    border: solid 1px black;
 }
