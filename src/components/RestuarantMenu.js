@@ -14,8 +14,8 @@ const RestuarantMenu = ()=>{
     }
     
     const {name,cuisines} = resValue?.data?.cards[0]?.card?.card?.info;
-    const ItemCards = (resValue?.data?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards[2]?.card?.card?.itemCards ) || (resValue?.data?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards[2]?.card?.card?.categories[0].itemCards) ;
-    
+    const ItemCards = (resValue?.data?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards[2]?.card?.card?.itemCards ) ||  (resValue?.data?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards[2]?.card?.card?.categories[0].itemCards) ;
+    console.log(resValue)
     return (
         <div className="restuarantMenu">
             
@@ -25,6 +25,7 @@ const RestuarantMenu = ()=>{
             <ul>
                 { ItemCards.map((rest) => <li key ={rest.card.info.id}  >{rest.card.info.name} </li>  ) }
             </ul>
+
            
           
         </div>

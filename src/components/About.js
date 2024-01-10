@@ -15,11 +15,11 @@ class About  extends React.Component{
     render(){
         console.log("parent Render")
         return (
-            <div className="about">
-            <h1>About</h1>
-            <h2>This is namaste react web series</h2>
+            <div className=" bg-red-50">
+            <h1 className=" ">About</h1>
+            <h2 className="">This is namaste react web series</h2>
 
-            <User name = {"Siddartha(Functional)"}  />
+            {/* <User name = {"Siddartha(Functional)"}  /> */}
             <UserClass name = {"First"} />
             <UserClass name = {"Second"} />
             <UserClass name = {"Third"} />
