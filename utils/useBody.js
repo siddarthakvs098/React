@@ -16,8 +16,7 @@ const useBody = ()=>{
 
            const jsonValue = await data.json();
 
-           console.log(jsonValue);
-           console.log("Hello")
+          
            restArray = jsonValue.data.cards[1].card.card.gridElements.infoWithStyle.restaurants;
         
            setlistOfResturants(restArray);
